@@ -1,0 +1,77 @@
+/*Las variables si quieren modifiquen los colores, yo deje las del ejemplo del profe porque queda con la historia de Lumina*/
+/*Variables*/
+:root {
+ --color-primario: #028090;
+ --color-secundario: #1A2B4A;
+ --color-acento: #E8611A;
+ --color-fondo: #F7F9FA;
+ --color-texto: #1A1A1A;
+}
+
+/*Header*/
+ header{
+    background-color: var(--color-secundario);
+    padding: 1.5rem 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+ }
+ header h1{
+    grid-column: 2;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+ }
+ header h2, header p{
+    grid-column: 2;
+    color: #ffffff;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+ }
+
+ /*Logo*/
+ #logo{
+    grid-column: 1;
+    grid-row: 1/-1;
+    margin-right: 1.5rem;
+ }
+ header img{
+    display: block;
+    height: 80px;
+    width: auto;
+ }
+
+ /*Navegacion*/
+header nav{
+    grid-column: 3;
+    grid-row: 1/-1;
+    background-color: var(--color-secundario);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+header nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+header nav a:hover{
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+}
+
+/*Footer*/
+footer{
+    background-color: var(--color-secundario);
+    color: #ffffff;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
