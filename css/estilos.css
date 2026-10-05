@@ -1,12 +1,60 @@
-/*Las variables si quieren modifiquen los colores, yo deje las del ejemplo del profe porque queda con la historia de Lumina*/
-/*Variables*/
+/* 1. Importación de Google Fonts (SIEMPRE PRIMERA LÍNEA) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*VARIABLES GLOBALES (INTEGRANTE 1 Y 2) */
 :root {
- --color-primario: #028090;
- --color-secundario: #1A2B4A;
- --color-acento: #E8611A;
- --color-fondo: #F7F9FA;
- --color-texto: #1A1A1A;
+  /* Variables de la paleta de colores (Integrante 2) */
+  --color-primario: #028090;
+  --color-secundario: #1A2B4A;
+  --color-acento: #E8611A;
+  --color-fondo: #F7F9FA;
+  --color-texto: #1A1A1A;
+
+  /* Variable de fuente principal (Integrante 1) */
+  --fuente-principal: 'Roboto', sans-serif;
 }
+
+/*INTEGRANTE 1: Reset, Tipografía y Body Global*/
+
+/* Reset Universal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos globales del Body */
+body {
+  font-family: var(--fuente-principal);
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Estilos diferenciados para Encabezados (h1, h2, h3) */
+h1 {
+  font-size: 2.2rem;
+  color: var(--color-secundario);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--color-primario);
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: var(--color-acento);
+  margin-bottom: 0.5rem;
+}
+
+/*INTEGRANTE 2: Header, Navegación y Footer*/
 
 /*Header*/
  header{
