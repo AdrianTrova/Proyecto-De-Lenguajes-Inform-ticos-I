@@ -173,3 +173,31 @@ img{
     width:50%;
     height:auto;
 }
+
+/* creacion de una flexbox para los lugares- pt 3 */
+.lugares-flex 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+/* modificación de los articulos para que respeten los 300px */
+.lugares-flex article 
+{
+    flex: 1 1 300px; 
+    background-color: var(--color-acento);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; 
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+/* corrección al tamaño de las imágenes */
+.lugares-flex img 
+{
+    width: 100%;
+    height: auto; 
+    margin-bottom: 1rem;
+}
