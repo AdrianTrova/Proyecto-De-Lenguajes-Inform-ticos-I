@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Lúmina: desde sus orígenes a la actualidad</title>
 </head>
@@ -120,23 +122,37 @@
             </article>
         </section>
         <!-- SECCIÓN 3: Barrios o Zonas-->
-        <section id="barrios">
-            <h2>3. Barrios y Zonas Principales</h2>
-            <article>
-                <h3>Casco Histórico</h3>
-                <p>Es el corazón de la ciudad donde se conservan las construcciones originales del siglo 
-                XVIII, empedrados tradicionales y los antiguos faros de la bahía.</p>
-            </article>
-            <article>
-                <h3>Distrito del Puerto</h3>
-                <p>La zona más dinámica, donde convergen la actividad pesquera, los mercados de alimentos
-                frescos y los paseos gastronómicos frente al mar.</p>
-            </article>
-            <article>
-                <h3>Zona Alta y Acantilados</h3>
-                <p>Barrio residencial caracterizado por sus vistas panorámicas hacia el océano y su 
-                cercanía con los senderos del bosque.</p>
-            </article>
+        <!-- Uso de grilla--> 
+        <section id="barrios" class="py-4">
+            <div class="container">
+                <h2 class="text-center mb-4">3. Barrios y Zonas Principales</h2>
+                <div class="row g-4">
+                    <!-- Columna 1-->
+                    <div class="col-12 col-md-4">
+                        <article class="card h-100 p-3 shadow-sm">
+                        <h3>Casco Histórico</h3>
+                        <p>Es el corazón de la ciudad donde se conservan las construcciones originales del siglo 
+                         XVIII, empedrados tradicionales y los antiguos faros de la bahía.</p>
+                        </article>
+                    </div>
+                    <!-- Columna 2-->
+                    <div class="col-12 col-md-4">
+                        <article class="card h-100 p-3 shadow-sm">
+                        <h3>Distrito del Puerto</h3>
+                        <p>La zona más dinámica, donde convergen la actividad pesquera, los mercados de alimentos
+                        frescos y los paseos gastronómicos frente al mar.</p>
+                        </article>
+                    </div>
+                    <!-- Columna 3-->
+                    <div class="col-12 col-md-4">
+                        <article class="card h-100 p-3 shadow-sm">
+                        <h3>Zona Alta y Acantilados</h3>
+                        <p>Barrio residencial caracterizado por sus vistas panorámicas hacia el océano y su 
+                        cercanía con los senderos del bosque.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- SECCIÓN 4: Costumbres -->
         <section id="costumbres">
@@ -158,9 +174,7 @@
     <footer>
         <p>&copy; 2026 - Ciudad Lúmina - T.P. Lenguaje Informático (UNAHUR)</p>
     </footer>
+    <!-- Bootstrap JS  -->    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
-    
