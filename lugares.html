@@ -5,31 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-                rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
     <title>Lugares de Lúmina</title>
 </head>
 <body>
     <header>
-        <a href="index.html" id="logo">
-            <img src="img/logo-provisorio.png" alt="Logo de la Oficina de Turismo de Lúmina">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciudad.html">La Ciudad</a></li>
-                <li><a href="lugares.html">Lugares</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 px-3">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="index.html" id="logo">
+                    <img src="img/Emblema Náutico Vintage de Lúmina.png" alt="Logo de la Oficina de Turismo de Lúmina" style="height: 50px; width: auto; margin-right: 10px;">
+                    <span class="fw-bold">Lúmina</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="lugares.html">Lugares</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <h1>Lugares de Lúmina</h1>
-
+        <section class="py-3 text-center">
+            <h1>Lugares de Lúmina</h1>
+        </section>
         <h2>Índice de lugares</h2>
         <section>
             <nav>
@@ -49,185 +55,96 @@
             <div class="lugares-flex">
                 <article id="puerto">
                     <h2>Puerto de Lúmina</h2>
-    
                     <img src="img/Puerto.jfif" alt="Puerto">
-                    <p>
-                        Es una de las zonas más antiguas de la ciudad. Está lleno de barcos pesqueros, pequeños restaurantes y puestos donde los habitantes compran pescado fresco. Durante la noche, las luces del puerto se reflejan sobre el mar y crean uno de los paisajes más conocidos de la ciudad.
-                    </p>
-                    
+                    <p>Es una de las zonas más antiguas de la ciudad. Está lleno de barcos pesqueros, pequeños restaurantes y puestos donde los habitantes compran pescado fresco. Durante la noche, las luces del puerto se reflejan sobre el mar y crean uno de los paisajes más conocidos de la ciudad.</p>
                     <dl>
-                        <dt>Ubicación</dt>
-                        <dd>Zona costera</dd>
-    
-                        <dt>Actividades</dt>
-                        <dd>Recorrer el puerto, visitar restaurantes y observar el paisaje.</dd>
-    
-                        <dt>Se recomienda por</dt>
-                        <dd>Su paisaje nocturno e importancia histórica</dd>
+                        <dt>Ubicación</dt><dd>Zona costera</dd>
+                        <dt>Actividades</dt><dd>Recorrer el puerto, visitar restaurantes y observar el paisaje.</dd>
+                        <dt>Se recomienda por</dt><dd>Su paisaje nocturno e importancia histórica</dd>
                     </dl>
-                    
                 </article>
-    
                 <article id="plaza-del-reloj">
                     <h2>Plaza del Reloj</h2>
-    
                     <img src="img/plaza-Reloj.jfif" alt="Plaza Del Reloj">
-                    <p>
-                        Ubicada en el centro histórico, la plaza recibe su nombre por una enorme torre con un reloj construido hace más de dos siglos. Es el punto de encuentro más popular de Lúmina y suele estar llena de músicos, vendedores y turistas.
-                    </p>
-    
+                    <p>Ubicada en el centro histórico, la plaza recibe su nombre por una enorme torre con un reloj construido hace más de dos siglos. Es el punto de encuentro más popular de Lúmina y suele estar llena de músicos, vendedores y turistas.</p>
                     <dl>
-                        <dt>Ubicación</dt>
-                        <dd>Centro de la ciudad</dd>
-    
-                        <dt>Actividades</dt>
-                        <dd>Participar en actividades recreativas, visitar museos, visitar la feria central.</dd>
-    
-                        <dt>Se recomienda por</dt>
-                        <dd>Su variedad creativa, y la oportunidad de visitar la cima del reloj.</dd>
+                        <dt>Ubicación</dt><dd>Centro de la ciudad</dd>
+                        <dt>Actividades</dt><dd>Participar en actividades recreativas, visitar museos, visitar la feria central.</dd>
+                        <dt>Se recomienda por</dt><dd>Su variedad creativa, y la oportunidad de visitar la cima del reloj.</dd>
                     </dl>
                 </article>
-    
                 <article id="bosque-Arken">
                     <h2>Bosque de Arken</h2>
                     <img src="img/Bosque-Arken.webp" alt="Bosque Arken">
-                    <p>
-                        Al norte de la ciudad comienza un enorme bosque que, según las leyendas locales, existía mucho antes de que Lúmina fuera fundada. Hay senderos para caminar, pequeños lagos y antiguas ruinas escondidas entre los árboles.
-                    </p>
-    
+                    <p>Al norte de la ciudad comienza un enorme bosque que, según las leyendas locales, existía mucho antes de que Lúmina fuera fundada. Hay senderos para caminar, pequeños lagos y antiguas ruinas escondidas entre los árboles.</p>
                     <dl>
-                        <dt>Ubicación</dt>
-                        <dd>Norte de la ciudad</dd>
-    
-                        <dt>Actividades</dt>
-                        <dd>Caminatas y exploración de ruinas.</dd>
-    
-                        <dt>Se recomienda por</dt>
-                        <dd>Su paisaje, su tranquilidad y la exploración para curiosos</dd>
+                        <dt>Ubicación</dt><dd>Norte de la ciudad</dd>
+                        <dt>Actividades</dt><dd>Caminatas y exploración de ruinas.</dd>
+                        <dt>Se recomienda por</dt><dd>Su paisaje, su tranquilidad y la exploración para curiosos</dd>
                     </dl>
                 </article>
-    
                 <article id="faro">
                     <h2>Faro de Lúmina</h2>
                     <img src="img/Faro-acantilado.avif" alt="Faro oeste">
-                    <p>
-                        Construido sobre uno de los acantilados, el faro es considerado el símbolo de la ciudad. Desde su cima se puede observar prácticamente toda la costa. Cada año, durante el Festival de las Luces, cientos de personas se reúnen alrededor del faro.
-                    </p>
-    
+                    <p>Construido sobre uno de los acantilados, el faro es considerado el símbolo de la ciudad. Desde su cima se puede observar prácticamente toda la costa. Cada año, durante el Festival de las Luces, cientos de personas se reúnen alrededor del faro.</p>
                     <dl>
-                        <dt>Ubicación</dt>
-                        <dd>Sobre los acantilados del oeste.</dd>
-    
-                        <dt>Actividades</dt>
-                        <dd>Subir al mirador, observar la costa y participar del Festival de las Luces.</dd>
-    
-                        <dt>Se recomienda por</dt>
-                        <dd>Es el símbolo de Lúmina y ofrece una de las mejores vistas de la ciudad.</dd>
+                        <dt>Ubicación</dt><dd>Sobre los acantilados del oeste.</dd>
+                        <dt>Actividades</dt><dd>Subir al mirador, observar la costa y participar del Festival de las Luces.</dd>
+                        <dt>Se recomienda por</dt><dd>Es el símbolo de Lúmina y ofrece una de las mejores vistas de la ciudad.</dd>
                     </dl>
                 </article>
-    
                 <article id="jardines-aurora">
                     <h2>Jardines de Aurora</h2>
                     <img src="img/Jardines-Públicos.jpg" alt="Jardines Aurora">
-                    <p>
-                        Son unos enormes jardines públicos ubicados cerca del centro. Tienen fuentes, esculturas, árboles centenarios y un pequeño invernadero donde se cultivan flores durante todo el año. Es uno de los lugares favoritos de los habitantes para descansar.
-                    </p>
-    
+                    <p>Son unos enormes jardines públicos ubicados cerca del centro. Tienen fuentes, esculturas, árboles centenarios y un pequeño invernadero donde se cultivan flores durante todo el año. Es uno de los lugares favoritos de los habitantes para descansar.</p>
                     <dl>
-                        <dt>Ubicación</dt>
-                        <dd>Cerca del centro de la ciudad.</dd>
-    
-                        <dt>Actividades</dt>
-                        <dd>Pasear entre los jardines, visitar el invernadero, observar las esculturas y descansar junto a las fuentes.</dd>
-                        
-                        <dt>Se recomienda por</dt>
-                        <dd>Es un lugar tranquilo y agradable para descansar, rodeado de naturaleza.</dd>
+                        <dt>Ubicación</dt><dd>Cerca del centro de la ciudad.</dd>
+                        <dt>Actividades</dt><dd>Pasear entre los jardines, visitar el invernadero, observar las esculturas y descansar junto a las fuentes.</dd>
+                        <dt>Se recomienda por</dt><dd>Es un lugar tranquilo y agradable para descansar, rodeado de naturaleza.</dd>
                     </dl>
                 </article>
-    
                 <article id="museo-historia">
                     <h2>Museo de Historia de Lúmina</h2>
-    
                     <img src="img/Museo-de-Historia.png" alt="Museo de historia de Lumina">
-    
-                    <p>
-                        El museo funciona dentro de una antigua estación de tren. Allí se pueden encontrar mapas, objetos de los primeros habitantes y documentos relacionados con la fundación de la ciudad.
-                    </p>
-                    
+                    <p>El museo funciona dentro de una antigua estación de tren. Allí se pueden encontrar mapas, objetos de los primeros habitantes y documentos relacionados con la fundación de la ciudad.</p>
                     <dl>
-                        <dt>Ubicación</dt>
-                        <dd>Centro histórico, dentro de la antigua estación de tren.</dd>
-    
-                        <dt>Actividades</dt>
-                        <dd>Recorrer las exposiciones, observar mapas antiguos y conocer objetos utilizados por los primeros habitantes.</dd>
-    
-                        <dt>Se recomienda por</dt>
-                        <dd>Es el mejor lugar para conocer la historia y los orígenes de Lúmina.</dd>
+                        <dt>Ubicación</dt><dd>Centro histórico, dentro de la antigua estación de tren.</dd>
+                        <dt>Actividades</dt><dd>Recorrer las exposiciones, observar mapas antiguos y conocer objetos utilizados por los primeros habitantes.</dd>
+                        <dt>Se recomienda por</dt><dd>Es el mejor lugar para conocer la historia y los orígenes de Lúmina.</dd>
                     </dl>
                 </article>
-    
                 <article id="calle-magnolia">
                     <h2>Calle Magnolia</h2>
-    
                     <img src="img/Calle-Magnolia.jfif" alt="Calle Magnolia">
-    
-                    <p>
-                        Una calle peatonal famosa por sus cafeterías, librerías y pequeñas tiendas. Durante las tardes suele ser una de las zonas más concurridas de la ciudad.
-                    </p>
-    
+                    <p>Una calle peatonal famosa por sus cafeterías, librerías y pequeñas tiendas. Durante las tardes suele ser una de las zonas más concurridas de la ciudad.</p>
                     <dl>
-                        <dt>Ubicación</dt>
-                        <dd>Zona comercial del centro.</dd>
-    
-                        <dt>Actividades</dt>
-                        <dd>Visitar cafeterías, recorrer librerías, comprar artesanías y pasear por la calle peatonal.</dd>
-    
-                        <dt>Se recomienda por</dt>
-                        <dd>Es una de las zonas más animadas de la ciudad y permite conocer la vida cotidiana de sus habitantes.</dd>
+                        <dt>Ubicación</dt><dd>Zona comercial del centro.</dd>
+                        <dt>Actividades</dt><dd>Visitar cafeterías, recorrer librerías, comprar artesanías y pasear por la calle peatonal.</dd>
+                        <dt>Se recomienda por</dt><dd>Es una de las zonas más animadas de la ciudad y permite conocer la vida cotidiana de sus habitantes.</dd>
                     </dl>
                 </article>
-    
                 <article id="mirador-nocturno">
                     <h2>Mirador Nocturno</h2>
-    
                     <img src="img/Mirador-Nocturno.jfif" alt="Mirador Nocturno">
-                    <p>
-                        Situado sobre los acantilados al oeste, es famoso por permitir observar el cielo nocturno sin demasiada contaminación lumínica. Muchos habitantes van allí por la noche para contemplar las estrellas.
-                    </p>
-    
+                    <p>Situado sobre los acantilados al oeste, es famoso por permitir observar el cielo nocturno sin demasiada contaminación lumínica. Muchos habitantes van allí por la noche para contemplar las estrellas.</p>
                     <dl>
-                        <dt>Ubicación</dt>
-                        <dd>Acantilados del oeste, cerca del Faro de Lúmina.</dd>
-    
-                        <dt>Actividades</dt>
-                        <dd>Observar las estrellas, contemplar la ciudad iluminada y disfrutar del paisaje nocturno.</dd>
-    
-                        <dt>Se recomienda por</dt>
-                        <dd>Tiene poca contaminación lumínica y ofrece una vista espectacular del cielo y de la ciudad durante la noche.</dd>
+                        <dt>Ubicación</dt><dd>Acantilados del oeste, cerca del Faro de Lúmina.</dd>
+                        <dt>Actividades</dt><dd>Observar las estrellas, contemplar la ciudad iluminada y disfrutar del paisaje nocturno.</dd>
+                        <dt>Se recomienda por</dt><dd>Tiene poca contaminación lumínica y ofrece una vista espectacular del cielo y de la ciudad durante la noche.</dd>
                     </dl>
                 </article>
             </div>
         </section>
         <article>
             <h2>Una pequeña leyenda</h2>
-            
-            <p>
-                Los habitantes de Lúmina cuentan que, debajo de la ciudad, existe una antigua red de túneles construida por los primeros habitantes.
-            </p>
-
-            <p>
-                La leyenda dice que uno de esos túneles conduce hasta una cámara ubicada debajo del faro. Allí existiría una piedra azul que habría sido la responsable de la misteriosa luz que los exploradores vieron cuando llegaron por primera vez.
-            </p>
-                
-            <p>
-                Nadie ha podido demostrar que la cámara exista.
-                Pero cada cierto tiempo, durante las noches de tormenta, algunos habitantes aseguran ver una luz azul proveniente de los acantilados.
-            </p>
+            <p>Los habitantes de Lúmina cuentan que, debajo de la ciudad, existe una antigua red de túneles construida por los primeros habitantes.</p>
+            <p>La leyenda dice que uno de esos túneles conduce hasta una cámara ubicada debajo del faro. Allí existiría una piedra azul que habría sido la responsable de la misteriosa luz que los exploradores vieron cuando llegaron por primera vez.</p>
+            <p>Nadie ha podido demostrar que la cámara exista. Pero cada cierto tiempo, durante las noches de tormenta, algunos habitantes aseguran ver una luz azul proveniente de los acantilados.</p>
         </article>
     </main>
-    <footer>
-        <p>&copy; 2026 - Ciudad Lúmina - T.P. Lenguaje Informático (UNAHUR)</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <small>&copy; 2026 Ciudad de Lúmina. T.P. Lenguaje Informático (UNAHUR). Todos los derechos reservados.</small>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

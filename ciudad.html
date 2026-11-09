@@ -6,37 +6,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Lúmina: desde sus orígenes a la actualidad</title>
 </head>
 <body>
     <header>
-        <a href="index.html" id="logo">
-            <img src="img/logo-provisorio.png" alt="Logo de la Oficina de Turismo de Lúmina">
-        </a>
-        <h1>Lúmina: desde sus orígenes a la actualidad</h1>
-        <h2>Información general, características y costumbres de la ciudad</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciudad.html">La Ciudad</a></li>
-                <li><a href="lugares.html">Lugares</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 px-3">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="index.html" id="logo">
+                    <img src="img/Emblema Náutico Vintage de Lúmina.png" alt="Logo de la Oficina de Turismo de Lúmina" style="height: 50px; width: auto; margin-right: 10px;">
+                    <span class="fw-bold">Lúmina</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="ciudad.html">Ciudad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
+        <section class="py-3 text-center">
+            <h1>Lúmina: desde sus orígenes a la actualidad</h1>
+            <h2>Información general, características y costumbres de la ciudad</h2>
+        </section>
+
         <section id="introduccion">
             <h2>La Ciudad</h2>
-            <!-- Enlace interno a id #barrios -->
             <p>Bienvenido a la sección dedicada a la historia y el desarrollo de Lúmina. A través de este 
             recorrido podrás conocer desde los orígenes pesqueros de la ciudad hasta su vida urbana actual. 
             Si querés explorar directamente la distribución de la ciudad, podés <a href="#barrios">consultar 
             sus barrios y zonas principales</a>.</p>       
          </section>
-        <!-- SECCIÓN 1: Historia e Identidad -->
         <section id="historia">
             <h2>1. Historia e Identidad</h2>
             <article>
@@ -47,12 +55,10 @@
             </article>
             <article>
                 <h3>Evolución e Identidad Cultural</h3>
-                <!-- Parrafo con uso de <strong> requerido -->
                 <p>Con el paso de las décadas, aquel pequeño enclave pesquero se transformó en 
                 una próspera <strong>ciudad portuaria</strong>. Su identidad está marcada por 
                 la luz del mar, la arquitectura colonial costera y una fuerte unión comunitaria.</p>
             </article>
-           <!-- ASIDE 1: Misterio Bosque de Arken) -->
             <aside>
                 <h3>El misterio del Bosque de Arken</h3>
                 <p>En 1789, intentando hallar la fuente en tierra firme de los destellos que se divisaban
@@ -64,7 +70,6 @@
                 que solo quienes guardan un corazón noble y la mente en calma logran divisar el destello 
                 dorado entre las sombras de Arken.</p>
             </aside>
-            <!-- ASIDE 2: origen del nombre -->
             <aside>
                 <h3>El origen del nombre Lúmina</h3>
                 <p>Esta misma naturaleza resplandeciente fue la que bautizó a la ciudad. Décadas antes de
@@ -74,12 +79,10 @@
                     <em>Lúmina</em>.</p>
             </aside>
         </section>
-        <!-- SECCIÓN 2: Características Principales -->
         <section id="caracteristicas">
             <h2>2. Características Principales</h2>
             <article>
                 <h3>Geografía y Relieve</h3>
-                <!-- Párrafo con uso de <em> requerido -->
                 <p>La geografía de Lúmina se caracteriza por sus abruptos acantilados marítimos que 
                 desembocan en playas de arena fina, enmarcados por la densidad del <em>Bosque de 
                 Arken</em> al este y una bahía de aguas calmas ideal para la navegación comercial
@@ -98,9 +101,7 @@
                 tradicional y no opacar la visibilidad de las estrellas ni la iluminación natural del 
                 mar.</p>
             </article>
-            <!-- Imagen 1 con alt -->
              <img src="https://picsum.photos/600/300" alt="Vista panorámica nocturna del puerto de Lúmina con barcos pesqueros amarrados y luces en la costa">
-            <!-- Lista de definición requerida <dl> -->
             <article id="datos-de-interes">
                 <h3>Datos de Interés de la Ciudad</h3>
                 <dl>
@@ -121,13 +122,10 @@
                 </dl>
             </article>
         </section>
-        <!-- SECCIÓN 3: Barrios o Zonas-->
-        <!-- Uso de grilla--> 
         <section id="barrios" class="py-4">
             <div class="container">
                 <h2 class="text-center mb-4">3. Barrios y Zonas Principales</h2>
                 <div class="row g-4">
-                    <!-- Columna 1-->
                     <div class="col-12 col-md-4">
                         <article class="card h-100 p-3 shadow-sm">
                         <h3>Casco Histórico</h3>
@@ -135,7 +133,6 @@
                          XVIII, empedrados tradicionales y los antiguos faros de la bahía.</p>
                         </article>
                     </div>
-                    <!-- Columna 2-->
                     <div class="col-12 col-md-4">
                         <article class="card h-100 p-3 shadow-sm">
                         <h3>Distrito del Puerto</h3>
@@ -143,7 +140,6 @@
                         frescos y los paseos gastronómicos frente al mar.</p>
                         </article>
                     </div>
-                    <!-- Columna 3-->
                     <div class="col-12 col-md-4">
                         <article class="card h-100 p-3 shadow-sm">
                         <h3>Zona Alta y Acantilados</h3>
@@ -154,7 +150,6 @@
                 </div>
             </div>
         </section>
-        <!-- SECCIÓN 4: Costumbres -->
         <section id="costumbres">
             <h2>4. Costumbres y Tradiciones</h2>
             <article>
@@ -167,14 +162,12 @@
                 <p>Es la festividad principal de la ciudad. Se celebra cada comienzo de invierno, momento
                 en que las calles y costas se iluminan con cientos de lámparas artísticas y velas.</p>
             </article>
-            <!-- Imagen 2 con alt -->
             <img src="https://picsum.photos/600/301" alt="Faroles de luces tradicionales colgados en las calles empedradas durante la celebración del Festival de las Luces">
         </section>
     </main>
-    <footer>
-        <p>&copy; 2026 - Ciudad Lúmina - T.P. Lenguaje Informático (UNAHUR)</p>
-    </footer>
-    <!-- Bootstrap JS  -->    
+    <footer class="bg-dark text-white text-center py-3">
+        <small>&copy; 2026 Ciudad de Lúmina. T.P. Lenguaje Informático (UNAHUR). Todos los derechos reservados.</small>
+    </footer>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

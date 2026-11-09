@@ -2,34 +2,50 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <title>Contacto de la Oficina de Turismo de Lúmina</title>
         <meta name="description" content="Todos los medios de contacto oficiales de la oficina de turismo de Lúmina">
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/estilos.css">
     </head>
     <body>
         <header>
-            <a href="index.html" id="logo">
-                <img src="img/logo-provisorio.png" alt="Logo de la Oficina de Turismo de Lúmina">
-            </a>
-            <h1>Contacto de la Oficina de Turismo de Lúmina</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="ciudad.html">Ciudad</a></li>
-                    <li><a href="lugares.html">Lugares</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 px-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html" id="logo">
+                        <img src="img/Emblema Náutico Vintage de Lúmina.png" alt="Logo de la Oficina de Turismo de Lúmina" style="height: 50px; width: auto; margin-right: 10px;">
+                        <span class="fw-bold">Lúmina</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
+                            <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
+
         <main>
+            <section class="py-3 text-center">
+                <h1>Contacto de la Oficina de Turismo de Lúmina</h1>
+            </section>
+
             <h2>Ponte en contacto con nosotros</h2>
             <p>Si estás planeando tu próximo viaje a <strong>Lúmina</strong> o tienes alguna duda sobre nuestras actividades culturales, estamos listos para ayudarte.</p>
             <p>¿Necesitas enviarnos un mensaje directo? Ve directamente a nuestro <a href="#formulario-contacto">formulario de consultas</a>.</p>
+            
             <section id="contactos">
                 <h2>Canales de Asistencia Inmediata</h2>
                 <div>
@@ -56,21 +72,19 @@
                     <p>Prensa y Eventos: <a href="mailto:prensayeventos@lumina.gob.ar">prensayeventos@lumina.gob.ar</a></p>
                 </div>
             </section>
+
             <section id="formulario-contacto">
                 <h3>Buzon de Consultas Turisticas</h3>
                 <p>Completa el siguiente formulario y un agente de turismo se pondra en contacto a la brevedad.</p>
                 <form action="#" method="post">
                     <label for="nombre">Nombre completo: </label>
-                    <input type="text" id="nombre"
-                        name="nombre" required>
+                    <input type="text" id="nombre" name="nombre" required>
 
                     <label for="apellido">Apellido completo: </label>
-                    <input type="text" id="apellido"
-                        name="apellido" required>
+                    <input type="text" id="apellido" name="apellido" required>
 
                     <label for="email">Correo Electronico: </label>
-                    <input type="email" id="email"
-                        name="email" required>
+                    <input type="email" id="email" name="email" required>
                     
                     <label for="motivo">Motivo de consulta: </label>
                     <select name="motivo" id="motivo">
@@ -94,8 +108,10 @@
                 </ul>
             </aside>
         </main>
-        <footer>
-            <small>&copy; 2026 Ciudad de Lúmina. Todos los derechos reservados.</small>
+
+        <footer class="bg-dark text-white text-center py-3">
+            <small>&copy; 2026 Ciudad de Lúmina. T.P. Lenguaje Informático (UNAHUR). Todos los derechos reservados.</small>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
