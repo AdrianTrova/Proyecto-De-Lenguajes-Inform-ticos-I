@@ -1,0 +1,13 @@
+const formContacto = document.getElementById("form-contacto");
+const inputNombre = document.getElementById("nombre");
+const inputEmail = document.getElementById("email");
+const inputMensaje = document.getElementById("mensaje");
+const msgContacto = document.getElementById("msg-contacto");
+
+formContacto.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const nombre = inputNombre.value.trim();
+    const email = inputEmail.value.trim();
+    const mensaje = inputMensaje.value.trim();
+});
