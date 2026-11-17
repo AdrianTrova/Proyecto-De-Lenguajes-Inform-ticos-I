@@ -11,3 +11,10 @@ formContacto.addEventListener("submit", (e) => {
     const email = inputEmail.value.trim();
     const mensaje = inputMensaje.value.trim();
 });
+
+const botonModoOscuro = document.getElementById("boton-modo-oscuro");
+
+botonModoOscuro.addEventListener("click", () => {
+        document.body.classList.toggle("modo-oscuro");
+    }
+);
