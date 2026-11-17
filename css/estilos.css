@@ -209,3 +209,20 @@ img
     color: #dfc11c !important;
     font-weight: bold;
 }
+
+body.modo-oscuro
+{
+    background-color: #1A1A1A;
+    color: #f8f9fa;
+}
+
+body.modo-oscuro .lugares-flex article
+{
+    background-color:var(--color-secundario);
+}
+
+body.modo-oscuro .card
+{
+    background-color:var(--color-secundario);
+    color: #ffffff;
+}
